@@ -7,11 +7,11 @@ var domi=['.com','.net','.us','.io']
             let aleatoriodomi=Math.floor(Math.random()*domi.length);
             return domi[aleatoriodomi]
 }
-for(j=0;j<adj.length;j++){
-    for(i=0;i<pronoun.length;i++){
+for(j=0;j<pronoun.length;j++){
+    for(i=0;i<adj.length;i++){
     
         for(k=0;k<noun.length;k++){
-            console.log(pronoun[i] + adj[j] + noun[k] +aleatorio());
+            console.log(pronoun[j] + adj[i] + noun[k]);
         }
         
     }
