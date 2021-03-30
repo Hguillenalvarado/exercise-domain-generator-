@@ -3,10 +3,13 @@ var adj = ['great', 'big' ];
 var noun = ['jogger','racoon'];
 var domi=['.com','.net','.us','.io']
 
- function aleatorio(){
+ /*function aleatorio(){
             let aleatoriodomi=Math.floor(Math.random()*domi.length);
             return domi[aleatoriodomi]
-}
+}*/ /* recomendación en mentoría no hacer funcion*/ 
+
+
+/*
 for(j=0;j<pronoun.length;j++){
     for(i=0;i<adj.length;i++){
     
@@ -16,4 +19,16 @@ for(j=0;j<pronoun.length;j++){
         
     }
     
-}
+}*/
+
+/*usar foreach*/
+
+pronoun.forEach(function(pron){
+    adj.forEach(function(ad){
+        noun.forEach(function(nou){
+        console.log(pron + ad + nou);
+
+    });
+
+    });
+});
